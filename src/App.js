@@ -3,8 +3,11 @@ import './App.css';
 import About from './components/about';
 import Contact from './components/contact';
 import { ThemeContext } from './components/context';
+import Education from './components/education';
+import Interest from './components/interest';
 import Intro from './components/intro';
 import Project from './components/project';
+import Skills from './components/skills';
 import Toggle from './components/toggle';
 
 function App() {
@@ -17,7 +20,10 @@ function App() {
       <Toggle/>
       <Intro />
       <About/>
+      <Skills/>
       <Project/>
+      <Education/>
+      <Interest/>
       <Contact/> 
     </div>
   );

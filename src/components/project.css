@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .pl-texts {
@@ -16,8 +17,11 @@
 }
 
 .pl-desc {
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
+  font-size: small;
+  color:gray
 }
+
 
 .pl-list {
   width: 100%;

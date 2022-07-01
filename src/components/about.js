@@ -1,37 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './about.css'
-import Award from '../img/award.png'
+import Me from "../img/PicsArt_06-29-04.46.24.jpg"
+import Typical from 'react-typical'
+
+
 function About() {
+  
+ const[start,setStart]=useState(false)
+ const[start2,setStart2]=useState(false)
+
+ setTimeout(() => {
+     setStart(true)
+ }, 18500);
+ setTimeout(() => {
+  setStart2(true)
+}, 24500);
+
+
   return (
     <div className='a'>
         <div className='a-left'>
         <div className='a-card bg'></div>    
         <div className='a-card'>
-            <img className='a-img' src='https://thumbs.dreamstime.com/b/portrait-young-handsome-man-white-shirt-outdoor-portrait-young-handsome-man-white-shirt-outdoor-nice-appearance-131934608.jpg'/>
+            <img className='a-img' src={Me}/>
         </div>
         </div>    
         <div className='a-right'>
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+        <Typical
+           steps={['Hello! I am a Fresher from Chennai, I have a good knowledge in Web development and always ready to learn new technologies. Dedicated to creating and optimizing interactive, user-friendly and feature-rich web applications, Exposure to both Front-end & Back-end web development.', 1000]}
+           loop={Infinity}
+            />           
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+        {start &&
+           <Typical
+           steps={[" My dream to build a Artificial intelligent web development tool(So i'm intrested in Webdevelopment).", 1000]}
+           loop={Infinity}
+   
+         /> 
+       
+        }
+        <br/>
+      
+        {start2 && 
+        <Typical
+        steps={[' APJ once  said Winners Are Not Those Who Never Fail But Those Who Never Quit.']}
+        loop={Infinity}
+      /> 
+        }
+     
+  
+      
         </p>
-        <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
-          <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
-            <p className="a-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
-            </p>
-          </div>
-        </div>
+
             </div>    
     </div>
   )

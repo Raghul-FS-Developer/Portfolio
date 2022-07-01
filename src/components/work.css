@@ -1,22 +1,30 @@
 .p {
-  width: 30%;
+  width: 40%;
   height: 40vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0px 0px;
-  overflow: hidden;
+  overflow: hidden;  
+
 }
+
 
 .p-browser {
   height: 20px;
   background-color: rgb(243, 242, 242);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: sticky;
   z-index: 2;
-}
 
+}
+.circle{
+  display: flex;
+  flex-direction: row;
+}
 .p-circle {
+
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -25,7 +33,8 @@
 }
 
 .p-img {
-  width: 100%;
+  width:100%;
+   /* background-size: cover; */
   transition: all 10s ease;
 }
 
@@ -38,4 +47,37 @@
     width: 40%;
     height: 20vh;
   }
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: black;
+  margin-right: 7px; /* If you want dots under the hoverable text */
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  
+  font-size:xx-small;
+  visibility: hidden;
+  width:75px;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  right: 105%;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

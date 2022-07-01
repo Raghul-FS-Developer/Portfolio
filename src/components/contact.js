@@ -31,15 +31,15 @@ function Contact() {
         <div className="c-info">
           <div className="c-info-item">
             <img src={Phone} alt="" className="c-icon" />
-            +1 1234 556 75
+            7639859509
           </div>
           <div className="c-info-item">
             <img className="c-icon" src={Email} alt="" />
-            contact@lama.dev
+            raghulraghu2002@gmail.com
           </div>
           <div className="c-info-item">
             <img className="c-icon" src={Address} alt="" />
-            245 King Street, Touterie Victoria 8520 Australia
+            Chennai, Tamil Nadu
           </div>
         </div>
       </div>
@@ -51,13 +51,13 @@ function Contact() {
         <form ref={formRef} onSubmit={handleSubmit}>
           <input 
           style={{backgroundColor: darkMode && "#333"}}
-           type="text" placeholder="Name" name="user_name" />
+           type="text" classname="contact-holder" placeholder="Name" name="user_name" />
           <input
            style={{backgroundColor: darkMode && "#333"}} 
           type="text" placeholder="Subject" name="user_subject" />
           <input
            style={{backgroundColor: darkMode && "#333"}}
-           type="text" placeholder="Email" name="user_email" />
+           type="email" placeholder="Email" name="user_email" />
           <textarea 
           style={{backgroundColor: darkMode && "#333"}} 
           rows="5" placeholder="Message" name="message" />

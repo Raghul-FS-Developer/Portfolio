@@ -6,7 +6,8 @@
 .c-bg {
   width: 20px;
   height: 100%;
-  background-color: #59b256;
+  /* border-right: 4px solid rgb(151, 22, 108); */
+  background-color: rgb(5, 148, 148);
   position: absolute;
 }
 
@@ -15,7 +16,12 @@
   display: flex;
   padding-bottom: 0px;
 }
-
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
 .c-left {
   flex: 1;
 }
@@ -75,7 +81,7 @@ textarea {
 button {
   border: none;
   padding: 15px;
-  background-color: #59b256;
+  background-color: rgb(5, 148, 148);
   color: white;
   font-weight: 500;
   cursor: pointer;
