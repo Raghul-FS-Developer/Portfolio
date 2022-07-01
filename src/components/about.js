@@ -11,10 +11,10 @@ function About() {
 
  setTimeout(() => {
      setStart(true)
- }, 18500);
+ }, 19500);
  setTimeout(() => {
   setStart2(true)
-}, 24500);
+}, 25000);
 
 
   return (
