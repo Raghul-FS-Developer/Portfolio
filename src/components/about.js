@@ -27,11 +27,12 @@ function About() {
           intrested in Webdevelopment).
           <br/>
           <br />
-          <Typical 
+          <div className="quotes">         <Typical 
         steps ={["Failure is an option here. If things are not failing, your are not innovating enough by Elon Musk",2000,"APJ once said Winners Are Not Those Who Never Fail But Those Who Never Quit.",2000]}
         loop ={Infinity}
         />
-          
+          </div>
+ 
         </p>
       </div>
     </div>

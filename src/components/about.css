@@ -21,7 +21,9 @@
 
 
 }
-
+.quotes{
+  height: 50px;
+}
 .a-card.bg {
   position: absolute;
   top: 50px;
