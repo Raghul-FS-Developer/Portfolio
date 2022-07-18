@@ -5,6 +5,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
 }
 
 .pl-texts {
@@ -25,6 +26,7 @@
 
 .pl-list {
   width: 100%;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,8 +35,13 @@
 @media screen and (max-width: 480px) {
   .pl {
     padding: 10px;
-  }
 
+  }
+.pl-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .pl-texts {
     width: 100%;
   }

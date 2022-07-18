@@ -1,10 +1,17 @@
 import React from 'react'
 import './intro.css'
-
+import { ThemeContext } from '../components/context';
 import Me2 from "../img/IMG-20210301-WA0029 (9).jpg"
+import { useContext } from 'react';
 
 function Intro() {
 
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
+    const handleClick = ()=>{
+        window.scrollTo({top:6000,behavior:"smooth"});
+    }
   return (
     <div className='i'>
         <div className='i-left'>
@@ -22,6 +29,11 @@ function Intro() {
                 <p className='i-desc'>
                 I'm a Full-Stack-Developer knack of building web applications with Front and Back-End operations.
                 </p>
+                <div className='btn-bunch'>
+                    <a className='btn' style={{color:darkMode?"white":"black"}} href='https://drive.google.com/file/d/11cfuQAcf9UWnlX1Zjx42alOscoD26b63/view?usp=sharing' target='_blank'>Resume</a>
+                    <a className='btn' style={{color:darkMode?"white":"black"}} href='https://github.com/Raghul-FS-Developer' target='_blank'>GitHub</a>
+                    <a className='btn s'  onClick={handleClick}>Hire Me</a>
+                </div>
             </div>
           
         </div>

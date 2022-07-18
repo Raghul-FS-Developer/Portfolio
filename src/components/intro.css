@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .i-right {
@@ -17,7 +18,7 @@
 
 .i-left-wrapper {
   padding: 50px;
-  height: 50%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,17 +27,51 @@
 .i-intro {
   font-size: 30px;
   font-weight: 300;
+  margin-top: 100px;
+  /* margin-bottom: 20px; */
+
 }
 
 .i-name {
   font-size: 60px;
+  /* margin-bottom: 20px; */
 }
+.btn-bunch{
+  display: flex;
+  margin-top:20px ;
+  margin-left: 180px;
 
+}
 .i-title {
   height: 50px;
   overflow: hidden;
+  /* margin-bottom: 20px; */
+}
+.btn{
+  border:1px solid rgb(5, 148, 148);
+  margin: 10px;
+  padding:5px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.s{
+  background-color: rgb(5, 148, 148);
+ color: white;
+ /* border-radius:0px 50px 50px 0px ; */
+ -webkit-clip-path: polygon(0% 0%, 89% 0, 100% 52%, 90% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 89% 0, 100% 52%, 90% 100%, 0% 100%);
 }
 
+.btn:hover{
+  background-color: rgb(5, 148, 148);
+  color: white !important;
+  transition-duration:500ms;
+  cursor: pointer;
+}
+.btn-bunch a{
+ text-decoration: none;
+
+}
 .i-title-wrapper {
   height: 100%;
   animation: move 10s ease-in-out infinite alternate;

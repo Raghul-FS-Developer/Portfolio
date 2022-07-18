@@ -11,7 +11,7 @@ const Work = ({img,link,gitf,gitb,disc,gits}) => {
 
     return (
      <>
-      <div className="p" style={{borderColor:darkMode? "#777": ""}}>
+      <div className="p"  style={{borderColor:darkMode? "#777": ""}}>
         <div className="p-browser" style={{backgroundColor:darkMode? "#555": ""}}>
           <div className='circle'>
           <div className="p-circle" style={{backgroundColor:darkMode? "whitesmoke": ""}}></div>
@@ -20,9 +20,12 @@ const Work = ({img,link,gitf,gitb,disc,gits}) => {
           </div>
           
           <div>
-          <a className='tooltip'href={gitf} target="_blank" rel="noreferrer" style={{color:darkMode? "whitesmoke": ""}} ><AiFillGithub />
+            {gitf && (
+
+              <a className='tooltip'href={gitf} target="_blank" rel="noreferrer" style={{color:darkMode? "whitesmoke": ""}} ><AiFillGithub />
           <span class="tooltiptext">Github-Client</span>
           </a> 
+            )}
           {gitb && (<a className='tooltip'href={gitb} target="_blank" rel="noreferrer" style={{color:darkMode? "whitesmoke": ""}}><AiFillGithub/>
           <span class="tooltiptext">Github-Server</span>
           </a>)}
@@ -33,10 +36,13 @@ const Work = ({img,link,gitf,gitb,disc,gits}) => {
           <span class="tooltiptext">{disc}</span>
           </a> 
           </div>
-
+   
         </div>
-                <a href={link} target="_blank" rel="noreferrer">
-          <img src={img} alt="" className="p-img" />
+                <a href={link}  target="_blank" rel="noreferrer">
+         {img ?
+                <img src={img} alt="" className="p-img" />:
+                <p className='upcoming'>upcoming...</p>
+              } 
          
         </a>
         
