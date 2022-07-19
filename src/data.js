@@ -23,9 +23,9 @@ export const products = [
     {
       id: 2,
       img: book,
-      link: "https://bookkeeping-app.vercel.app",
-      gitf:'https://github.com/Raghul-FS-Developer/Book-app',
-      gitb:"https://github.com/Raghul-FS-Developer/url-shortner-backend",
+      link: "https://library-app-two-xi.vercel.app",
+      gitf:'https://github.com/Raghul-FS-Developer/library-app',
+      gitb:"https://github.com/Raghul-FS-Developer/library-app-backend",
       disc:"Library web app, you can store books, search books & read every books, check the github readme for used frameworks/ packages "
     },
     {
@@ -33,7 +33,7 @@ export const products = [
       img: url,
       link: "https://url-shortner-frontend.vercel.app",
       gitf:"https://github.com/Raghul-FS-Developer/url-shortner-frontend",
-      gitb:"https://github.com/Raghul-FS-Developer/book-app-backend",
+      gitb:"https://github.com/Raghul-FS-Developer/url-shortner-backend",
       disc:"Url Shortener web app, Url Shortener is an application is used to shorten the URL, check the github readme for used frameworks/ packages "
     },
     {
