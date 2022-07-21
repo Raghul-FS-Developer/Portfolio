@@ -17,7 +17,7 @@ export const products = [
       link: "https://real-estate-six-flax.vercel.app",
       gitf:'https://github.com/Raghul-FS-Developer/real-estate',
       gitb:'https://github.com/Raghul-FS-Developer/real-estate/tree/server',
-      disc:"Real Estate web app, you can post,buy & rent your property, check the github readme for used frameworks/ packages"
+      disc:"Real Estate web app, you can post,buy & rent a property, check the github readme for used frameworks/ packages"
     }
     ,
     {
