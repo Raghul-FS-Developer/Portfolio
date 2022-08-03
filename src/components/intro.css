@@ -53,6 +53,7 @@
   padding:5px 15px;
   border-radius: 5px;
   margin-top: 20px;
+  width:60px
 }
 .s{
   background-color: rgb(5, 148, 148);
@@ -147,4 +148,12 @@ clip-path: polygon(0% 0%, 89% 0, 100% 52%, 90% 100%, 0% 100%);
     font-size: 20px;
   }
   
+}
+
+@media screen and (max-width: 1232px) {
+  .btn-bunch{
+ 
+    margin-left:0px;
+  
+  }
 }
