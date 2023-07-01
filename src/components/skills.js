@@ -18,6 +18,10 @@ function Skills() {
             <p className="sub">CSS</p>
         </div>
         <div className="tools">
+            <img  className="s1-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn33U4msAO3aApavbY3to8duyEKQyxh1kGdw1uhQD5QUTxpS3y2OgxPhuzrW-VbKTg4po&usqp=CAU"/>
+            <p className="sub">SaSS</p>
+        </div>
+        <div className="tools">
             <img  className="s1-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"/>
             <p className="sub">JavaScript</p>
         </div>
@@ -30,12 +34,28 @@ function Skills() {
             <p className="sub">React</p>
         </div>
         <div className="tools">
-            <img  className="s1-img" src="https://www.steemasoftware.com/images/Nodejs.png"/>
+            <img  className="s1-img" src="https://www.javatpoint.com/js/nodejs/images/node-js-tutorial.png"/>
             <p className="sub">Node</p>
         </div>
         <div className="tools">
             <img  className="s1-img" src={ex}/>
             <p className="sub">Express</p>
+        </div>
+        <div className="tools">
+            <img  className="s1-img" src="https://thekenyandev.com/static/ba180df420dbaffd7405a0f65764feab/cover.png"/>
+            <p className="sub">JWT</p>
+        </div>  
+        <div className="tools">
+            <img  className="s1-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/2048px-Socket-io.svg.png"/>
+            <p className="sub">Socket.IO</p>
+        </div>  
+        <div className="tools">
+            <img  className="s1-img" src="https://previews.123rf.com/images/khaliddjw/khaliddjw1802/khaliddjw180200013/96272873-password-encryption-icon.jpg"/>
+            <p className="sub">Bcryptjs</p>
+        </div>  
+        <div className="tools">
+            <img  className="s1-img" src="https://ih1.redbubble.net/image.438912065.6243/flat,1000x1000,075,f.u3.jpg"/>
+            <p className="sub">Mongoose</p>
         </div>
         <div className="tools">
             <img  className="s1-img" src="https://img.icons8.com/color/480/mongodb.png"/>

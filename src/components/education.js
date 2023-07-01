@@ -56,15 +56,16 @@ function Education() {
           </div>
           <div class="box box-top">
             <div class="date" style={{backgroundColor:darkMode ? "#222" : ""}}>
-              <p className="small-date">
-                2022 <span className="small">Present</span>
+              <p className="small-date" style={{paddingTop:'7px'}}>
+                2022 
               </p>
             </div>
-            <div class="box-content">
+            <div class="box-content" style={{padding:'20px',marginTop:"20px"}}>
               <p>
                 <h3>Full Stack Developer</h3>
                 <span className="small2">
-                  GUVI Geek Networks, IITM Research Park, Chennai,Tamilnadu
+                 - Certified by IIT Madras
+                  {/* GUVI Geek Networks, IITM Research Park, Chennai,Tamilnadu */}
                 </span>
               </p>
             </div>
