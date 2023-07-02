@@ -23,8 +23,9 @@ function About() {
           development.
         </p>
         <p className="a-desc">
-          My dream to build a Artificial intelligent web development tool(So i'm
-          intrested in Webdevelopment).
+          My dream is to build an Artificial intelligent web development tool.
+          {/* (So i'm
+          intrested in Webdevelopment). */}
           <br/>
           <br />
           <div className="quotes">         <Typical 
