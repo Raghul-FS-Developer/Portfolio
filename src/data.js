@@ -63,7 +63,7 @@ export const products = [
     {
       id: 7,
       img: oauth,
-      link: "https://oauth-f.herokuapp.com",
+      link: "https://o-auth2-0.vercel.app",
       gitf:"https://github.com/Raghul-FS-Developer/OAuth2.0",
       disc:"OAuth web app using auth0, used to authenticate a user."
     },
